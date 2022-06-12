@@ -12,10 +12,17 @@ namespace FinancesExtended
 {
     public partial class Form1 : Form
     {
+        Person person;
+
         public Form1()
         {
             InitializeComponent();
+            person = new Person("Sam");
         }
 
+        private void btnShowInfo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
