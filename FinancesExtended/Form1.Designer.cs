@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnShowInfo = new System.Windows.Forms.Button();
-            this.lbNameInfo = new System.Windows.Forms.Label();
             this.lbAmountInfo = new System.Windows.Forms.Label();
+            this.lbNameInfo = new System.Windows.Forms.Label();
+            this.btnShowInfo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnSetOwnerName = new System.Windows.Forms.Button();
-            this.btnAddMoney = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddMoney = new System.Windows.Forms.Button();
+            this.btnSetOwnerName = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,10 +68,30 @@
             this.groupBox1.Controls.Add(this.btnShowInfo);
             this.groupBox1.Location = new System.Drawing.Point(35, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(423, 152);
+            this.groupBox1.Size = new System.Drawing.Size(699, 152);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // lbAmountInfo
+            // 
+            this.lbAmountInfo.AutoSize = true;
+            this.lbAmountInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbAmountInfo.Location = new System.Drawing.Point(166, 85);
+            this.lbAmountInfo.Name = "lbAmountInfo";
+            this.lbAmountInfo.Size = new System.Drawing.Size(207, 21);
+            this.lbAmountInfo.TabIndex = 2;
+            this.lbAmountInfo.Text = "Amount of money is .... euro ";
+            // 
+            // lbNameInfo
+            // 
+            this.lbNameInfo.AutoSize = true;
+            this.lbNameInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbNameInfo.Location = new System.Drawing.Point(166, 45);
+            this.lbNameInfo.Name = "lbNameInfo";
+            this.lbNameInfo.Size = new System.Drawing.Size(155, 21);
+            this.lbNameInfo.TabIndex = 1;
+            this.lbNameInfo.Text = "Wallet belongs to .......";
             // 
             // btnShowInfo
             // 
@@ -84,26 +104,6 @@
             this.btnShowInfo.Text = "Show Info ";
             this.btnShowInfo.UseVisualStyleBackColor = false;
             this.btnShowInfo.Click += new System.EventHandler(this.btnShowInfo_Click);
-            // 
-            // lbNameInfo
-            // 
-            this.lbNameInfo.AutoSize = true;
-            this.lbNameInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbNameInfo.Location = new System.Drawing.Point(166, 45);
-            this.lbNameInfo.Name = "lbNameInfo";
-            this.lbNameInfo.Size = new System.Drawing.Size(155, 21);
-            this.lbNameInfo.TabIndex = 1;
-            this.lbNameInfo.Text = "Wallet belongs to .......";
-            // 
-            // lbAmountInfo
-            // 
-            this.lbAmountInfo.AutoSize = true;
-            this.lbAmountInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbAmountInfo.Location = new System.Drawing.Point(166, 85);
-            this.lbAmountInfo.Name = "lbAmountInfo";
-            this.lbAmountInfo.Size = new System.Drawing.Size(207, 21);
-            this.lbAmountInfo.TabIndex = 2;
-            this.lbAmountInfo.Text = "Amount of money is .... euro ";
             // 
             // groupBox2
             // 
@@ -120,16 +120,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // btnSetOwnerName
+            // numericUpDown1
             // 
-            this.btnSetOwnerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnSetOwnerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSetOwnerName.Location = new System.Drawing.Point(22, 34);
-            this.btnSetOwnerName.Name = "btnSetOwnerName";
-            this.btnSetOwnerName.Size = new System.Drawing.Size(161, 45);
-            this.btnSetOwnerName.TabIndex = 3;
-            this.btnSetOwnerName.Text = "Set Owner\'s name ";
-            this.btnSetOwnerName.UseVisualStyleBackColor = false;
+            this.numericUpDown1.Location = new System.Drawing.Point(338, 113);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(55, 23);
+            this.numericUpDown1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(209, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Amount to add:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(209, 48);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 23);
+            this.textBox1.TabIndex = 5;
             // 
             // btnAddMoney
             // 
@@ -142,29 +155,16 @@
             this.btnAddMoney.Text = "Add Money ";
             this.btnAddMoney.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // btnSetOwnerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 23);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(209, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 21);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Amount to add:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(338, 113);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(55, 23);
-            this.numericUpDown1.TabIndex = 6;
+            this.btnSetOwnerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnSetOwnerName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSetOwnerName.Location = new System.Drawing.Point(22, 34);
+            this.btnSetOwnerName.Name = "btnSetOwnerName";
+            this.btnSetOwnerName.Size = new System.Drawing.Size(161, 45);
+            this.btnSetOwnerName.TabIndex = 3;
+            this.btnSetOwnerName.Text = "Set Owner\'s name ";
+            this.btnSetOwnerName.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
@@ -172,7 +172,7 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Location = new System.Drawing.Point(567, 38);
+            this.groupBox3.Location = new System.Drawing.Point(740, 38);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(423, 152);
             this.groupBox3.TabIndex = 3;

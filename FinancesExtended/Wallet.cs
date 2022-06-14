@@ -9,10 +9,11 @@ namespace FinancesExtended
         private string description;
         private int balance;
 
-        public Wallet (string aDesscription, int aBalance)
+
+        public Wallet (string discription, int balance)
         {
-            description = aDesscription;
-            balance = aBalance;
+           this.description = discription;
+           this.balance = balance;
         }
     }
 
