@@ -12,8 +12,18 @@ namespace FinancesExtended
 
         public Wallet (string discription, int balance)
         {
-           this.description = discription;
-           this.balance = balance;
+            this.description = discription;
+            this.balance = balance;
+        }
+
+        public string GetDescription()
+        {
+            return description;
+        }
+
+        public int GetBalance()
+        {
+            return balance;
         }
     }
 

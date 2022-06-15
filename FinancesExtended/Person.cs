@@ -26,7 +26,7 @@ namespace FinancesExtended
             this.email = "unknown";
         }
 
-        public Person (string name, int age, string email,
+        public Person(string name, int age, string email,
                        string aDiscription1, int aBalance1,
                        string aDiscription2, int aBalance2)
         {
@@ -35,15 +35,40 @@ namespace FinancesExtended
             this.email = email;
  
             this.vacation = new Wallet(aDiscription1, aBalance1);
+            
             this.school = new Wallet(aDiscription2, aBalance2); 
             
         }
 
-        public string GetInfo()
+       public Wallet GetVacation()
         {
-            return $"{name} (age:{age} email: {email} )has two wallets: {vacation} and {school}";
+            return vacation;
         }
 
-      
+        public Wallet GetSchool()
+        {
+            return school;
+        }
+
+        public string GetInfo()
+        {
+            return $"Wallet belongs to {name} ( age: {age}, email: {email})";
+        }
+
+        public string GetVacationAmountInfo()
+        {
+            return $"{vacation.GetDescription()} has Euro {vacation.GetBalance()} ";
+        }
+
+        public string GetSchoolAmountInfo()
+        {
+            return $"{school.GetDescription()} has Euro {school.GetBalance()} ";
+        }
+
+
+
+
+
+
     }
 }

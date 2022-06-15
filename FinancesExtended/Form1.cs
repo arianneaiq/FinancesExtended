@@ -18,13 +18,17 @@ namespace FinancesExtended
         public Form1()
         {
             InitializeComponent();
-            person = new Person("Sam", 20, "sam90@gamil.com", "Wallet for vacation", 200, "Wallet for school", 400);
+            person = new Person("Sam", 20, "sam90@gamil.com", "Wallet for vacation", 200, "Wallet for school", 500);
            
         }
 
         private void btnShowInfo_Click(object sender, EventArgs e)
         {
             lbNameInfo.Text = person.GetInfo();
+            lbAmountInfo.Text = person.GetSchoolAmountInfo();
+            lbAmountInfo2.Text = person.GetVacationAmountInfo();
         }
+
+       
     }
 }

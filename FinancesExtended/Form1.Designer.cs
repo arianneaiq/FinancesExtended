@@ -39,9 +39,7 @@
             this.btnAddMoney = new System.Windows.Forms.Button();
             this.btnSetOwnerName = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbAmountInfo2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,22 +62,20 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.lbAmountInfo);
-            this.groupBox1.Controls.Add(this.lbNameInfo);
-            this.groupBox1.Controls.Add(this.btnShowInfo);
-            this.groupBox1.Location = new System.Drawing.Point(50, 63);
+            this.groupBox1.Location = new System.Drawing.Point(59, 137);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(999, 253);
+            this.groupBox1.Size = new System.Drawing.Size(604, 258);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Wallet 1";
             // 
             // lbAmountInfo
             // 
             this.lbAmountInfo.AutoSize = true;
             this.lbAmountInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbAmountInfo.Location = new System.Drawing.Point(237, 142);
+            this.lbAmountInfo.Location = new System.Drawing.Point(41, 66);
             this.lbAmountInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAmountInfo.Name = "lbAmountInfo";
             this.lbAmountInfo.Size = new System.Drawing.Size(323, 32);
@@ -90,7 +86,7 @@
             // 
             this.lbNameInfo.AutoSize = true;
             this.lbNameInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbNameInfo.Location = new System.Drawing.Point(237, 75);
+            this.lbNameInfo.Location = new System.Drawing.Point(59, 57);
             this.lbNameInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameInfo.Name = "lbNameInfo";
             this.lbNameInfo.Size = new System.Drawing.Size(243, 32);
@@ -101,7 +97,7 @@
             // 
             this.btnShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnShowInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnShowInfo.Location = new System.Drawing.Point(31, 102);
+            this.btnShowInfo.Location = new System.Drawing.Point(1012, 24);
             this.btnShowInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnShowInfo.Name = "btnShowInfo";
             this.btnShowInfo.Size = new System.Drawing.Size(163, 75);
@@ -118,7 +114,7 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.btnAddMoney);
             this.groupBox2.Controls.Add(this.btnSetOwnerName);
-            this.groupBox2.Location = new System.Drawing.Point(50, 350);
+            this.groupBox2.Location = new System.Drawing.Point(59, 428);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -181,51 +177,26 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Location = new System.Drawing.Point(1057, 63);
+            this.groupBox3.Controls.Add(this.lbAmountInfo2);
+            this.groupBox3.Location = new System.Drawing.Point(819, 142);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(604, 253);
+            this.groupBox3.Size = new System.Drawing.Size(613, 253);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // label2
+            // lbAmountInfo2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(237, 142);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Amount of money is .... euro ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(237, 75);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Wallet belongs to .......";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(31, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 75);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Show Info ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.lbAmountInfo2.AutoSize = true;
+            this.lbAmountInfo2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbAmountInfo2.Location = new System.Drawing.Point(47, 61);
+            this.lbAmountInfo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAmountInfo2.Name = "lbAmountInfo2";
+            this.lbAmountInfo2.Size = new System.Drawing.Size(323, 32);
+            this.lbAmountInfo2.TabIndex = 2;
+            this.lbAmountInfo2.Text = "Amount of money is .... euro ";
             // 
             // groupBox4
             // 
@@ -235,11 +206,11 @@
             this.groupBox4.Controls.Add(this.textBox2);
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Location = new System.Drawing.Point(810, 350);
+            this.groupBox4.Location = new System.Drawing.Point(819, 428);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Size = new System.Drawing.Size(604, 282);
+            this.groupBox4.Size = new System.Drawing.Size(613, 282);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
@@ -300,7 +271,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(691, 374);
+            this.button4.Location = new System.Drawing.Point(700, 452);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(91, 75);
@@ -313,7 +284,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(691, 539);
+            this.button5.Location = new System.Drawing.Point(700, 617);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(91, 75);
@@ -323,7 +294,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(691, 476);
+            this.numericUpDown3.Location = new System.Drawing.Point(700, 554);
             this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(91, 31);
@@ -333,8 +304,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1679, 750);
+            this.ClientSize = new System.Drawing.Size(1679, 1069);
             this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.btnShowInfo);
+            this.Controls.Add(this.lbNameInfo);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox4);
@@ -356,6 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -372,9 +346,7 @@
         private System.Windows.Forms.Button btnAddMoney;
         private System.Windows.Forms.Button btnSetOwnerName;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbAmountInfo2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label4;
